@@ -32,7 +32,7 @@ module.exports = function (grunt) {
       }
     },
     jshint: {
-      files: ['src/**/*.js', 'test/**/*.js', 'demo/**/*.js'],
+      files: ['css/*.css', 'js/*.js', 'test/**/*.js', 'demo/**/*.js'],
       options: {
         curly: true,
         eqeqeq: true,

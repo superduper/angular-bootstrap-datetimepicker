@@ -31,7 +31,7 @@ module.exports = function (config) {
       'bower_components/bootstrap/docs/assets/js/bootstrap.js',
       'bower_components/angular/angular.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'src/js/datetimepicker.js',
+      'js/datetimepicker.js',
       'test/*.spec.js'
     ],
 
@@ -41,7 +41,7 @@ module.exports = function (config) {
     ],
 
     preprocessors: {
-      '**/src/js/*.js': ['coverage']
+      '**/js/*.js': ['coverage']
     },
 
     // test results reporter to use

@@ -5,7 +5,7 @@
     "author": "https://github.com/superduper/ng-bootstrap-datetimepicker/graphs/contributors",
     "license": "MIT",
     "homepage": "http://superduper.github.io/angular-bootstrap-datetimepicker",
-    "main": "src/js/datetimepicker.js",
+    "main": "js/datetimepicker.js",
     "dependencies": {},
     "devDependencies": {
         "grunt": "0.4.1",
