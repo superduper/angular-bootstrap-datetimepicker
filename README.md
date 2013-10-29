@@ -15,9 +15,8 @@ Only the CSS file from the bootstrap-datetimepicker project was re-used.
 #Dependencies
 
 Requires:
- * AngularJS 1.1.3 or higher (1.0.x will not work)
+ * AngularJS 1.2.x 
  * moment.js for date parsing and formatting
- * bootstrap's dropdown component (`dropdowns.less`)
  * bootstrap's sprites (`sprites.less` and associated images) for arrows
 
 #Testing
@@ -35,7 +34,7 @@ We use bower for dependency management. Add
 
 ```json
 dependencies: {
-    "angular-bootstrap-datetimepicker": "latest"
+    "angular-bootstrap-datetimepicker": "https://github.com/superduper/angular-bootstrap-datetimepicker.git"
 }
 ```
 
@@ -57,7 +56,6 @@ Add the css:
 Load the script files in your application:
 ```html
 <script type="text/javascript" src="components/moment/moment.js"></script>
-<script type="text/javascript" src="components/bootstrap/docs/assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="components/angular/angular.js"></script>
 <script type="text/javascript" src="components/angular-bootstrap-datetimepicker/src/js/datetimepicker.js"></script>
 ```
@@ -71,7 +69,7 @@ var myAppModule = angular.module('MyApp', ['ui.bootstrap.datetimepicker'])
 Apply the directive to your form elements:
 
 ```html
-<datetimepicker data-ng-model="data.date"></datetimepicker>
+<date-time-picker ng-model="data.date"></date-time-picker>
 ```
 
 ## Options
@@ -121,12 +119,12 @@ Note: Remember that the ng-required directive must be explicitly set, i.e. to "t
 ### Inline component.
 
 ```html
-<datetimepicker data-ng-model="data.date" ></datetimepicker>
+<date-time-picker ng-model="data.date" ></date-time-picker>
 ```
 ### Inline component with data bound to the page with the format specified via date filter:
 
 ```html
-<datetimepicker data-ng-model="data.date" ></datetimepicker>
+<date-time-picker ng-model="data.date" ></date-time-picker>
 ```
 ```
 <p>Selected Date: {{ data.date | date:'yyyy-MM-dd HH:mm' }}</p>
@@ -134,37 +132,24 @@ Note: Remember that the ng-required directive must be explicitly set, i.e. to "t
 
 Display formatting of the date field is controlled by Angular filters.
 
-### As a drop-down:
+### As a drop-down with angular ui-bootstrap:
 
 ```html
 <div class="dropdown">
-    <a class="dropdown-toggle" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
-        Click here to show calendar
-    </a>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-        <datetimepicker data-ng-model="data.date"
-                        data-datetimepicker-config="{ dropdownSelector: '.dropdown-toggle' }"></datetimepicker>
-    </ul>
+     <a class="dropdown-toggle" href="">
+         <div class="input-group">
+            <input type="text" class="form-control" ng-model="expiry">
+             <span class="input-group-addon">
+                 <span class="glyphicon glyphicon-calendar"></span>
+             </span>
+         </div>
+     </a>
+     <ul class="dropdown-menu" >
+       <date-time-picker ng-model="expiry" />
+     </ul>
 </div>
 ```
-In this example, the drop-down functionality is controlled by Twitter Bootstrap.
-The <code>dropdownSelector</code> tells the datetimepicker which element is bound to the Twitter Bootstrap drop-down so
-the drop-down is toggled closed after the user selectes a date/time.
 
-### Drop-down component with associated input box.
-```html
-<div class="dropdown">
-    <a class="dropdown-toggle my-toggle-select" id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#">
-        <div class="input-append"><input type="text" class="input-large" data-ng-model="data.date"><span class="add-on"><i
-                class="icon-calendar"></i></span>
-        </div>
-    </a>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-        <datetimepicker data-ng-model="data.date"
-                        data-datetimepicker-config="{ dropdownSelector: '.my-toggle-select' }"></datetimepicker>
-    </ul>
-</div>
-```
 In this example, the drop-down functionality is controlled by Twitter Bootstrap.
 The <code>dropdownSelector</code> tells the datetimepicker which element is bound to the Twitter Bootstrap drop-down so
 the drop-down is toggled closed after the user selectes a date/time.
