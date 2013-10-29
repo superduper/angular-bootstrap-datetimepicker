@@ -2,10 +2,10 @@
 ================================
 
 Native AngularJS datetime picker directive styled by Twitter Bootstrap
-[![Build Status](https://travis-ci.org/dalelotts/angular-bootstrap-datetimepicker.png?branch=master)](https://travis-ci.org/dalelotts/angular-bootstrap-datetimepicker)
-[![devDependency Status](https://david-dm.org/dalelotts/angular-bootstrap-datetimepicker/dev-status.png)](https://david-dm.org/dalelotts/angular-bootstrap-datetimepicker#info=devDependencies)
+[![Build Status](https://travis-ci.org/superduper/angular-bootstrap-datetimepicker.png?branch=master)](https://travis-ci.org/superduper/angular-bootstrap-datetimepicker)
+[![devDependency Status](https://david-dm.org/superduper/angular-bootstrap-datetimepicker/dev-status.png)](https://david-dm.org/superduper/angular-bootstrap-datetimepicker#info=devDependencies)
 
-[Home / demo page](http://dalelotts.github.io/angular-bootstrap-datetimepicker/)
+[Home / demo page](http://superduper.github.io/angular-bootstrap-datetimepicker/)
 
 # (Almost) Complete re-write
 
@@ -162,35 +162,35 @@ All internationalization is handled by Moment.js, see Moment's documention for d
 
 ## Year view
 
-![Datetimepicker year view](https://raw.github.com/dalelotts/angular-bootstrap-datetimepicker/master/screenshots/year.png)
+![Datetimepicker year view](https://raw.github.com/superduper/angular-bootstrap-datetimepicker/master/screenshots/year.png)
 
 This view allows the user to select the year for the target date.
 If the year view is the minView, the date will be set to midnight on the first day of the year
 
 ## Month view
 
-![Datetimepicker month view](https://raw.github.com/dalelotts/angular-bootstrap-datetimepicker/master/screenshots/month.png)
+![Datetimepicker month view](https://raw.github.com/superduper/angular-bootstrap-datetimepicker/master/screenshots/month.png)
 
 This view allows the user to select the month in the selected year.
 If the month view is the minView, the date will be set to midnight on the first day of the month.
 
 ## Day view (Default)
 
-![Datetimepicker day view](https://raw.github.com/dalelotts/angular-bootstrap-datetimepicker/master/screenshots/day.png)
+![Datetimepicker day view](https://raw.github.com/superduper/angular-bootstrap-datetimepicker/master/screenshots/day.png)
 
 This view allows the user to select the the day of the month, in the selected month.
 If the day view is the minView, the date will be set to midnight on the day selected.
 
 ## Hour view
 
-![Datetimepicker hour view](https://raw.github.com/dalelotts/angular-bootstrap-datetimepicker/master/screenshots/hour.png)
+![Datetimepicker hour view](https://raw.github.com/superduper/angular-bootstrap-datetimepicker/master/screenshots/hour.png)
 
 This view allows the user to select the hour of the day, on the selected day.
 If the hour view is the minView, the date will be set to the beginning of the hour on the day selected.
 
 ## Minute view
 
-![Datetimepicker minute view](https://raw.github.com/dalelotts/angular-bootstrap-datetimepicker/master/screenshots/minute.png)
+![Datetimepicker minute view](https://raw.github.com/superduper/angular-bootstrap-datetimepicker/master/screenshots/minute.png)
 
 This view allows the user to select a specific time of day, in the selected hour.
 By default, the time is displayed in 5 minute increments. The <code>minuteStep</code> property controls the increments of time displayed.
